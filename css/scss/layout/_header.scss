@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header{
+    padding: 20px 0;
+    border-bottom: 1px solid $gray-color;
+    overflow: hidden;
+    .logo{
+        width: 30%;
+        float: $flotLeft;
+        @media #{$minSmall} {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        @media #{$minMedium} {
+            float: $flotLeft;
+            width: 30%;
+            text-align: $textleft;
+        }
+        @media #{$maxMobile} {
+            display: block;
+            float: none;
+        }
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px ;
+        }
+        p{
+            
+        }
+    }
+    .navbar{
+        overflow: hidden;
+        margin-top: 20px;
+        width: 70%;
+        background-color: $red-color;
+        border-radius: 15px;
+        float: $flotLeft;
+        @media #{$minSmall} {
+            float: none;
+            width: 100%;
+            margin-top: 30px;
+        }
+        @media #{$minMedium} {
+            float: $flotLeft;
+            width: 70%;
+            text-align: $textleft;
+            margin-top: 1rem;
+        }
+        @media #{$maxMobile} {
+            border-radius: 5px;
+            display: none;
+            width: 100%;
+            background-color: rgba($gray-color, .4);
+        }
+        li{
+            width: 20%;
+            float: $flotLeft;
+            font-size: 18px;
+            text-align: center;
+            @media #{$maxMobile} {
+                display: block;
+                float: none;
+                width: 90%;
+            }
+            a{
+                color: #fff;
+                display: block;
+                padding:20px 10px ;
+                text-decoration: none;
+                &:hover{
+                    color: #ddd;
+                }
+            }
+        }
+    }
+}

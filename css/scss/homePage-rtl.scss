@@ -1,0 +1,110 @@
+@import "abstracts/variables";
+
+
+
+/// homepage rtl
+$flotLeft : right;
+$flotRight : left;
+
+$textRight: left;
+$textleft: right;
+
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header{
+        .logo{
+            @media #{$minMedium} {
+                float: $flotLeft;
+                text-align: $textleft;
+            }
+        }        
+    }
+    .navbar{
+        @media #{$minMedium} {
+            float: $flotRight;
+            text-align: $flotRight;
+        }
+        li{
+            float: $flotLeft;
+            @media #{$maxMobile} {
+                text-align: $textleft;
+            }
+        }
+}
+
+
+/* Start Services */
+.services{
+    .service-box{
+        @media #{$minMedium} {
+            float: $flotLeft;
+        }
+    }
+}
+/* Start Services */
+
+/* Start Our players */
+.our-players{
+    .player-box{
+        @media #{$minSmall} {
+            float: $flotLeft;
+        }
+        @media #{$minMedium} {
+            text-align: $textleft;
+        }
+    }
+}
+/* Start Our players  */
+
+/* Start lorem ipsum */
+.lorem-ipsum{
+    .lorem-box{
+        float: $flotLeft;
+    }
+}
+/* Start lorem ipsum  */
+
+
+
+/* Start Footer */
+.footer{
+    .gallery ,.info ,.contact{
+        float: $flotLeft;
+    }
+    .gallery{
+        .img-box{
+            img{
+                @media #{$minSmall} {
+                    float: $flotLeft;
+                }
+            }
+            .text{
+                @media #{$minSmall} {
+                    float: $flotLeft;
+                }
+            }
+        }
+    }
+    .copyright{
+        .text,.author{
+            float: $flotLeft;
+            width: 50%;
+        }
+        .author{
+            text-align: $textRight;
+        }
+    }
+}
+
+/* End Footer */
+
+/* start toggel */
+.the-toggler{
+    right: auto;
+    left: 15px;
+}
+
+/* start toggel */

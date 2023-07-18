@@ -1,0 +1,118 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+/* Start Footer */
+.footer{
+    background-color: #e2e2e2;
+    overflow-x: hidden;
+    margin-top: 50px;
+    .gallery ,.info ,.contact{
+        float: $flotLeft;
+    }
+    .gallery{
+        width: 50%;
+        @media #{$maxSmall} {
+            width: 75%;
+        }
+        @media #{$maxMobile} {
+            width: 100%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 20px;
+            @media #{$maxMobile} {
+                width: 100%;
+            }
+            img{
+                float: $flotLeft;
+                width: 150px;
+                height: 150px;
+                
+            }
+            .text{
+                float: $flotLeft;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc(100% - 180px);
+                h4{
+                    color: $red-color;
+                    margin: 20px 0 0;
+                }
+                p{
+                    color: #888;
+                    line-height: 1.9;
+                }
+            }
+        }
+    }
+    .info{
+        width: 25%;
+        @media #{$maxSmall} {
+            width: 50%;
+        }
+        @media #{$maxMobile} {
+            width: 100%;
+        }
+        ul{
+            color:#888;
+            padding: 0;
+            line-height: 1.8;
+            li{
+                span{
+                    color: $red-color;
+                }
+            }
+        }
+        h4{
+            color:#888;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p{
+            color:#888;
+            margin-top: 8px;
+        }
+    }
+    .contact{
+        width: 25%;
+        @media #{$maxSmall} {
+            width: 75%;
+            text-align: center;
+        }
+        @media #{$maxMobile} {
+            width: 100%;
+        }
+        input[type='text'],
+        input[type='email'],
+        textarea{
+            border: 1px solid #c9c9c9;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            outline: none;
+        }
+        textarea{
+            height: 140px;
+        }
+    }
+    .section-title{
+        font-weight: normal;
+        color: #444;
+    }
+    .copyright{
+        color: #888;
+        padding: 25px 0;
+        border-top: solid 1px #c5c5c5;
+        overflow: hidden;
+        .text,.author{
+            float: $flotLeft;
+            width: 50%;
+        }
+        .author{
+            text-align: $textRight;
+        }
+    }
+}
+
+/* End Footer */

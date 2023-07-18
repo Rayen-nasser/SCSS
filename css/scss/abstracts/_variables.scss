@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+// Main color
+/// @type Color
+$red-color:  #e2494c!default;
+$gray-color: #9c9c9c;
+
+/// Media 
+$maxMobile: "(max-width: 767px)";
+$maxSmall: "(max-width: 991px)";
+$minSmall: "(min-width: 768px)";
+$minMedium: "(min-width: 991px)";
+$minlarge: "(min-width: 1200px)";
+
+
+
+/// Container's maximum width
+/// @type Length
+
+$small : 750px;
+$medium : 970px;
+$large :1170px;
+
+
+
+/// homepage rtl
+$flotLeft : left;
+$flotRight : right;
+
+$textRight: right;
+$textleft: left;
+
+
